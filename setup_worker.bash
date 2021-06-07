@@ -1,7 +1,8 @@
 #!/bin/bash
 
+MANAGER_IP=$(cat list_hosts | head -1)
 sudo apt-get install nfs-common
 sudo mkdir -p /dat
 sudo chown ubuntu /dat
-echo "10.17.1.10:/dat      /dat      nfs rw,noatime,nolock,hard,tcp 0 0" | sudo tee -a /etc/fstab
+echo "${MANAGER_IP}:/dat      /dat      nfs rw,noatime,nolock,hard,tcp 0 0" | sudo tee -a /etc/fstab
 sudo mount -a --verbose
