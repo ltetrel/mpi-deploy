@@ -21,7 +21,7 @@ In the other case you will need to maually add the nodes with `--host` (or insid
 For example, you can run the hello-world script that is provided by first copying it:
 ```
 scp hello-world_mpi.bash /dat/hello-world_mpi.bash
-mpirun --prefix $HOME/.local -np 20 --host 192.168.2.1:${CPUS_1},192.168.2.2:${CPUS_2}... /dat/hello-world_mpi.bash
+mpirun --prefix $HOME/.local -np 20 --host 192.168.2.1:${CPUS_1},192.168.2.2:${CPUS_2} /dat/hello-world_mpi.bash
 ```
 
 # Going further
