@@ -12,7 +12,7 @@ This will configure a nfs storage for all nodes, and install mpi on the manager 
 To install and configure all workers, simply run `./install_workers.bash`, it will connect to each node, configure the nfs storage and instal `Open MPI`.
 
 # running mpi
-Even after adding mpi into the path (in the `.bashrc`), the system still has trouble to find it.
+Even after adding `mpi` into the path (in the `.bashrc`), the system still has trouble to find it.
 To fix that, specify where it relies on the host(s) using the `--prefix`.
 
 If you are using a supported resource manager (like [SLURM](https://slurm.schedmd.com/documentation.html)), `Open MPI` will get the slot information from it.
