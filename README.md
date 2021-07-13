@@ -4,7 +4,7 @@ Openmpi deployment scripts
 # Confgure and install
 
 ## Hosts
-Add all your hosts IP intot the `list_hosts` file at the root of this repo, the first line should be the manager IP.
+Add all the hosts (manager and worker IP) into the `list_hosts` file at the root of this repo, the first line should be the manager IP.
 
 ## Install
 Log-in to you manager node and run `./install_manager.bash`.
