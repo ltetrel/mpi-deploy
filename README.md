@@ -1,5 +1,5 @@
 # mpi-deploy
-Openmpi deployment scripts
+Openmpi deployment scripts.
 
 # Confgure and install
 
