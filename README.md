@@ -1,5 +1,5 @@
 # mpi-deploy
-Openmpi deployment scripts.
+[Open MPI](https://www.open-mpi.org/) and [Singularity](https://sylabs.io/guides/3.0/user-guide/index.html) deployment scripts.
 
 # Confgure and install
 
@@ -8,8 +8,8 @@ Add all the hosts (manager and worker IP) into the `list_hosts` file at the root
 
 ## Install
 Log-in to you manager node and run `./install_manager.bash`.
-This will configure a nfs storage for all nodes, and install mpi on the manager machine.
-To install and configure all workers, simply run `./install_workers.bash`, it will connect to each node, configure the nfs storage and instal `Open MPI`.
+This will configure a nfs storage for all nodes, install `singularity` and `Open MPI` on the manager machine.
+To configure and install all workers, simply run `./install_workers.bash`.
 
 # running mpi
 Even after adding `mpi` into the path (in the `.bashrc`), the system still has trouble to find it.
