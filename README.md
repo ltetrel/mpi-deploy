@@ -16,7 +16,7 @@ cd mpi-deploy
 Add all the hosts (manager and worker IP) into the `list_hosts` file at the root of this repo, the first line should be the manager IP.
 
 ## Install
-Log-in to you manager node and run `./install_manager.bash`.
+Still in the manager node,  run `./install_manager.bash`.
 This will configure a nfs storage for all nodes, install `singularity` and `Open MPI` on the manager machine.
 To configure and install all workers, simply run `./install_workers.bash`.
 
