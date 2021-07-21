@@ -33,6 +33,7 @@ mpirun --prefix $HOME/.local -np 20 --host 192.168.2.1:${NCPU_HOST_1},192.168.2.
 ```
 
 If you want to check the workload, use `/dat/test_mpi.bash`. It will compute the hash from a random 100MB file.
+To test `singularity`, you can use `/dat/hello-world_singularity.bash`.
 
 # Going further
 Check the [Open MPI tutorials](https://mpitutorial.com/tutorials/running-an-mpi-cluster-within-a-lan/) if you are curious.
