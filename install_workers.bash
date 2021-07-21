@@ -1,7 +1,8 @@
 #!/bin/bash
 
-IPS=$(tac list_hosts | head -4)
-MANAGER_IP=$(cat /dat/list_hosts | head -1)
+N_HOSTS=$(cat list_hosts | wc -l)
+IPS=$(tac list_hosts | head -$(expr ${N_HOSTS} - 1))
+MANAGER_IP=$(cat list_hosts | head -1)
 for IP in $IPS
 do
         scp setup_worker.bash $IP:~/
