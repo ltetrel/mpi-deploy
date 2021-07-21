@@ -27,9 +27,8 @@ To fix that, specify where it relies on the host(s) using the `--prefix`.
 If you are using a supported resource manager (like [SLURM](https://slurm.schedmd.com/documentation.html)), `Open MPI` will get the slot information from it.
 In the other case you will need to maually add the nodes with `--host` (or inside a file with `--hostfile`) and [specify the number of available slots](https://www.open-mpi.org/faq/?category=running#slots-without-hostfiles).
 
-For example, you can run the hello-world script that is provided by first copying it:
+For example, you can run the hello-world script that is provided by th this repo:
 ```
-scp hello-world_mpi.bash /dat/hello-world_mpi.bash
 mpirun --prefix $HOME/.local -np 20 --host 192.168.2.1:${CPU_1},192.168.2.2:${CPU_2} /dat/hello-world_mpi.bash
 ```
 
