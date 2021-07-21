@@ -3,6 +3,15 @@
 
 # Confgure and install
 
+## Cloning
+First, log-in to your node that will be the manager.
+You can then clone this repository and cd into it:
+```
+ssh USER@MANAGER_IP
+git clone https://github.com/ltetrel/mpi-deploy
+cd mpi-deploy
+```
+
 ## Hosts
 Add all the hosts (manager and worker IP) into the `list_hosts` file at the root of this repo, the first line should be the manager IP.
 
