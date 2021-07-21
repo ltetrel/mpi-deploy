@@ -29,7 +29,7 @@ In the other case you will need to maually add the nodes with `--host` (or insid
 
 For example, you can run the hello-world script that is provided in this repo:
 ```
-mpirun --prefix $HOME/.local -np 20 --host 192.168.2.1:${CPU_1},192.168.2.2:${CPU_2} /dat/hello-world_mpi.bash
+mpirun --prefix $HOME/.local -np 20 --host 192.168.2.1:${NCPU_HOST_1},192.168.2.2:${NCPU_HOST_2} /dat/hello-world_mpi.bash
 ```
 
 # Going further
