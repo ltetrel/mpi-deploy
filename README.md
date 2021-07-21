@@ -32,5 +32,7 @@ For example, you can run the hello-world script that is provided in this repo:
 mpirun --prefix $HOME/.local -np 20 --host 192.168.2.1:${NCPU_HOST_1},192.168.2.2:${NCPU_HOST_2} /dat/hello-world_mpi.bash
 ```
 
+If you want to check the workload, use `/dat/test_mpi.bash`. It will compute the hash from a random 100MB file.
+
 # Going further
 Check the [Open MPI tutorials](https://mpitutorial.com/tutorials/running-an-mpi-cluster-within-a-lan/) if you are curious.
