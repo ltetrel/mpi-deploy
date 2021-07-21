@@ -7,3 +7,4 @@ sudo chown ubuntu /dat
 duso chmod u+rwx /dat
 sudo systemctl enable nfs-kernel-server
 sudo systemctl restart nfs-kernel-server
+cp * /dat/
