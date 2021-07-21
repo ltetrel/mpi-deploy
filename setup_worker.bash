@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MANAGER_IP=$(cat list_hosts | head -1)
+MANAGER_IP=$1
 sudo apt-get install nfs-common
 sudo mkdir -p /dat
 sudo chown ubuntu /dat
